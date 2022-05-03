@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+     <!-- Favicon icon link -->
+     <link rel = "icon" type="image/png" href = "icons/title.png">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/admin_form.css">
+
+    <!-- Google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <div class="navigation">
+            <div class="navbar_logo">
+                <a href="index.html"><img src="icons/new-logo.png" title="Logo"></a>
+            </div>
+            <div class="navbar_links">
+                <a href="#" class="nav_link">About</a>
+                <a href="contact.html" class="nav_link">Contact</a>
+            </div>
+        </div>
+        <!-- End of Navbar -->
+    </header>
+    <!-- End of Header -->
+
+    <div class="form">
+        <div class="form-div">
+            <h2>Add Courses</h2>
+            <!-- Admin form -->
+            <form action="" method="">
+                <div class="input-div">
+                    <div class="left-input">
+                        <div class="form_item">
+                            <label for="course">Course: </label>
+                            <input type="text" id="course" placeholder="Choose Course" required>
+                        </div>
+                        <div class="form_item">
+                            <label for="type">Type: </label>
+                            <select name="type" id="type" required>
+                                <option value="" selected>Choose type</option>
+                                <option value="article">Article</option>
+                                <option value="video">Video</option>
+                                <option value="articleandvideo">Both</option>
+                            </select>
+                        </div>
+                        <div class="form_item">
+                            <label for="platform">Platform: </label>
+                            <input type="text" id="platform" placeholder="Choose a platform" required>
+                        </div>
+                        <div class="form_item">
+                            <label for="level">Level</label>
+                            <select name="level" id="level" required>
+                                <option value="" selected>Choose level </option>
+                                <option value="begineer">Begineer</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="right-input">
+                        <div class="form_item">
+                            <label for="price">Price:</label>
+                            <select name="price" id="price" required>
+                                <option value="" selected>Choose Price</option>
+                                <option value="free">Free</option>
+                                <option value="paid">Paid</option>
+                            </select>
+                        </div>
+                        <div class="form_item">
+                            <label for="prerequisite">Prerequisite:</label>
+                            <textarea id="prerequisite" rows="3" cols="33" placeholder="Write prerequisite..." required></textarea>
+                        </div>
+                        <div class="form_item">
+                            <label for="description">Description: </label>
+                            <textarea id="description" rows="3" cols="33" placeholder="Write description..." required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <input type="file" accept="image/*" class="file" required/>
+                </div>
+                <div class="form_button" id="button">
+                    <button type="submit" class="add-course">Add</button>
+                    <button type="submit" class="cancel-course">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

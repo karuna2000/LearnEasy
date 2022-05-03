@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Scrollbar style */
+::-webkit-scrollbar-thumb {
+    background-color: #004f70;
+    border-radius: 5px;
+}
+body {
+    font-family: "Poppins",sans-serif;
+    /* font-family: 'Merriweather', serif; */
+}
+
+/* Header and navbar */
+header {
+    height: 4rem;
+}
+header .navigation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px #a8a8a8;
+}
+.navigation .navbar_logo {
+    width: 14rem;
+    margin-left: 8rem;
+  }
+.navbar_logo a {
+    width: 100%;
+}
+.navbar_logo a img {
+    width: 100%;
+    height: 50px;
+}
+.navigation .navbar_links {
+    text-align: right;
+    width: 100%;
+}
+.navbar_links a {
+    padding: 5rem;
+    margin-right: 5rem;
+    text-decoration: none;
+    color: #4a4a4af1;
+    font-size: 18px;
+    padding: 6px;
+    transition: all 0.4s ease;
+}
+.navbar_links a:hover {
+    border-bottom: 4px solid #e4e11f;;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+/* End of Navbar */
+
+/* Main content */
+.main-content {
+    background-image: linear-gradient(to left, #2cbada, #22ced0, #70ddc1, #92f399, #d2eb80);
+    display: flex;
+}
+.main-content .card-body {
+    font-family: OpenSans-Bold, Arial,sans-serif;
+    display: block;
+    padding: 2rem;
+    margin-left: 2rem;
+    width: 60%;
+}
+.card-body h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #033d56;
+}
+.card-body .text {
+    font-size: 15px;
+    line-height: 1.6;
+    width: 90%;
+    font-family: 'Merriweather', serif;
+}
+.card-body .rating-reviews {
+    width: max-content;
+}
+.rating-reviews .rating-number {
+    color: #fd7739;
+    font-size: 25px;
+    padding: .5rem;
+    font-weight: 600;
+}
+.rating-reviews .ratings, .reviews {
+    font-size: 16px;
+    padding-left: .5rem;
+    color:#015754;
+}
+.card-body .level{
+    margin-bottom: 0.3rem;
+    width: max-content;
+    color: #5f6502;
+    font-size: 15px;
+    font-style:italic;
+}
+.card-body .type {
+    width: max-content;
+    color: #5f6502;
+    font-size: 15px;
+    font-style:italic;
+}
+.card-body .course-btn, .bookmark-btn {
+    text-decoration: none;
+    padding: .4rem .8rem;
+    font-size: 14px;
+    transition: all 0.4s ease;
+    background-color: #45b7d1;
+    color: #fff;
+    width: max-content;
+}
+.card-body .course-btn:hover, .bookmark-btn:hover {
+    color: #fff;
+    background-color:#138f98;
+    text-decoration: underline;
+}
+.card-body .bookmark-btn {
+    margin-left: .4rem;
+}
+.card-body .more-course-text {
+    margin-top: .3rem;
+}
+.card-body .more-course {
+    color: #3f3f3f;
+    padding: .5rem .5rem;
+    font-size: 14px;
+}
+.card-body .more-course:hover {
+    color: #fff;
+    background-color: #45b7d1;
+}
+.main-content .platform {
+    padding: 2rem;
+    width: 30%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: left;
+}
+.platform img {
+    width: 300px;
+    height: 300px;
+}
+/* End of main content */
+
+/* Review section */
+.review-rating-section {
+    margin: 2.5rem auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.review-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.review-div h3 {
+    font-size: 25px;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.review-div .review {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    background-color: #b7effb;
+    width: 80%;
+}
+.review .reviewer-name {
+    width: 100%;
+}
+.review .reviewer-rating {
+    display: flex;
+    width: 20%;
+    padding: 0.4rem 0;
+}
+.reviewer-rating i {
+    color: #f4a216;
+}
+.review .rate-star {
+    margin: .5rem 0;
+    width: 25%;
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+}
+.reviewer-name h4 {
+    width: 100%;
+    font-size: 22px;
+    font-family:'Segoe UI', sans-serif;
+}
+.review .review_text {
+    width: 100%;
+}
+.review_text p{
+    width: 100%;
+    /* background-color: red; */
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    line-height: 1.7;
+    color: #424242;
+}
+.rating-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.rating-div h3 {
+    font-size: 25px;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.rating-div .rating {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    background-color: #b7effb;
+    width: 80%;
+}
+.rating .rate-star {
+    display: flex;
+    direction: rtl;
+    width: 30%;
+}
+.rate-star a {
+    font-size: 26px;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    margin: 3px;
+    color: #ffffff;
+}
+.rate-star a:hover {
+    color: gold;
+    transform: scale(1.2);
+}
+.s1:hover ~ a {
+    color: gold;
+}
+.s2:hover ~ a {
+    color: gold;
+}
+.s3:hover ~ a {
+    color: gold;
+}
+.s4:hover ~ a {
+    color: gold;
+}
+.s5:hover ~ a {
+    color: gold;
+} 
+.rating .rating-form {
+    margin: .5rem 0;
+}
+.rating-form .user-rating {
+    display: flex;
+    width: 20%;
+    padding: 0.4rem 0;
+} 
+.user-rating i {
+    color: #ffffff;
+}
+.rating-form textarea {
+    resize: none;
+    font-family: 'Merriweather', sans-serif;
+    padding: .3rem;
+    outline: none;
+    border-radius: 5px;
+    color: #5b5b5b;
+    margin: .5rem 0;
+}
+.rating-form button {
+    border: none;
+    border-radius: 5px;
+    padding: .4rem .8rem;
+    font-size: 15px;
+    color: #fff;
+    background-color: #45b7d1;
+    transition: all 0.4s ease;
+}
+.rating-form button:hover {
+    background-color:#138f98;
+}
+
+/* End of review section */
+
+/* Footer */
+.footer {
+    background-color: #046f93;
+}
+.footer .footer_inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.foot_logo {
+    width: 16%;
+    height: 100px; 
+}
+.foot_logo img {
+    width: 100%;
+    height: 100%;
+}
+/* Footer page links */
+.footer_inner .links_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    padding: 3rem 0;
+}
+.links_container .resources h4, .community_link h4 {
+    font-family: 'Acme', sans-serif;
+    font-weight: 2;
+    font-size: 20px;
+    padding: 1rem;
+    padding-top: 0;
+}
+.links_container .links, .community_link .communities {
+      padding: 1rem 1em;
+      border-left: 2px solid rgb(59, 59, 59);
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+}
+.links a, .community_link a{
+    text-decoration: none;
+    color: rgb(41, 37, 37);
+}
+.links a:hover, .community_link a:hover{
+    color: rgb(215, 214, 214);
+    transition: color 0.3s ease;
+}
+  /* End of footer links */
+  
+/* Social div */
+.social_div h4 {
+    font-family: 'Acme',sans-serif;
+    font-weight: 2;
+    font-size: 20px;
+    padding: 1rem;
+    padding-top: 0;
+}
+.social_div .icon_links {
+    padding: 1rem 1em;
+    border-left: 2px solid rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.social_div .icon_links {
+    text-decoration: none;
+}
+.icon_links a {
+    width: 40px;
+    height: 25px;
+    color: #000;
+}
+.bx{
+    width: 100%;
+    height: 100%;
+    font-size: 1.7em;
+}
+.bxl-facebook-circle:hover {
+    color: #0000ff;
+    transition: color 0.3s ease;
+}
+.bxl-instagram:hover{  background: -webkit-linear-gradient(50deg, rgba(205,205,64,1) 20%, rgba(208,41,9,1) 40%, rgb(146, 33, 175) 54%,  rgb(199, 106, 121) 80%, rgb(158, 38, 206) 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    transition: color 0.3s ease;
+}
+.bxl-twitter:hover {
+    color: #1c93e4;
+    transition: color 0.3s ease; 
+}
+.bxl-github:hover {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+/* End of social div*/
+  
+.copyright_div {
+    text-align: center;
+}
+.copyright_div p {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+/* End of footer*/
